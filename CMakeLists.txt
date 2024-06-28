@@ -25,7 +25,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(PL9823 PL9823.cpp )
+add_executable(PL9823 main.cpp )
 
 pico_set_program_name(PL9823 "PL9823")
 pico_set_program_version(PL9823 "0.1")
@@ -33,10 +33,13 @@ pico_set_program_version(PL9823 "0.1")
 pico_enable_stdio_uart(PL9823 1)
 pico_enable_stdio_usb(PL9823 0)
 
+pico_generate_pio_header(PL9823 ${CMAKE_CURRENT_LIST_DIR}/pl9823.pio)
+
 # Add the standard library to the build
 target_link_libraries(PL9823
-        pico_stdlib)
-
+  pico_stdlib
+  hardware_pio)
+  
 # Add the standard include files to the build
 target_include_directories(PL9823 PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}
