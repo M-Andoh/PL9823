@@ -67,6 +67,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "."
   "/home/mitsuru/pico/workspace/PL9823"
   "/home/mitsuru/pico/workspace/PL9823/.."
   "/home/mitsuru/pico/pico-sdk/src/common/pico_stdlib/include"
@@ -107,6 +108,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/boot_stage2/include"
+  "/home/mitsuru/pico/workspace/PL9823/color"
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   )
 
@@ -146,8 +148,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" "gcc" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
-  "/home/mitsuru/pico/workspace/PL9823/PL9823.cpp" "CMakeFiles/PL9823.dir/PL9823.cpp.obj" "gcc" "CMakeFiles/PL9823.dir/PL9823.cpp.obj.d"
   "/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
+  "/home/mitsuru/pico/workspace/PL9823/main.cpp" "CMakeFiles/PL9823.dir/main.cpp.obj" "gcc" "CMakeFiles/PL9823.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

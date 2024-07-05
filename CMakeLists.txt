@@ -35,10 +35,12 @@ pico_enable_stdio_usb(PL9823 0)
 
 pico_generate_pio_header(PL9823 ${CMAKE_CURRENT_LIST_DIR}/pl9823.pio)
 
+add_subdirectory(color)
+
 # Add the standard library to the build
 target_link_libraries(PL9823
   pico_stdlib
-  hardware_pio)
+  color)
   
 # Add the standard include files to the build
 target_include_directories(PL9823 PRIVATE

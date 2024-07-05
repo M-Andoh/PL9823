@@ -130,6 +130,19 @@ PL9823/fast:
 .PHONY : PL9823/fast
 
 #=============================================================================
+# Target rules for targets named PL9823_pl9823_pio_h
+
+# Build rule for target.
+PL9823_pl9823_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PL9823_pl9823_pio_h
+.PHONY : PL9823_pl9823_pio_h
+
+# fast build rule for target.
+PL9823_pl9823_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823_pl9823_pio_h.dir/build.make CMakeFiles/PL9823_pl9823_pio_h.dir/build
+.PHONY : PL9823_pl9823_pio_h/fast
+
+#=============================================================================
 # Target rules for targets named ELF2UF2Build
 
 # Build rule for target.
@@ -207,29 +220,18 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-PL9823.obj: PL9823.cpp.obj
-.PHONY : PL9823.obj
+#=============================================================================
+# Target rules for targets named color
 
-# target to build an object file
-PL9823.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823.dir/build.make CMakeFiles/PL9823.dir/PL9823.cpp.obj
-.PHONY : PL9823.cpp.obj
+# Build rule for target.
+color: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 color
+.PHONY : color
 
-PL9823.i: PL9823.cpp.i
-.PHONY : PL9823.i
-
-# target to preprocess a source file
-PL9823.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823.dir/build.make CMakeFiles/PL9823.dir/PL9823.cpp.i
-.PHONY : PL9823.cpp.i
-
-PL9823.s: PL9823.cpp.s
-.PHONY : PL9823.s
-
-# target to generate assembly for a file
-PL9823.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823.dir/build.make CMakeFiles/PL9823.dir/PL9823.cpp.s
-.PHONY : PL9823.cpp.s
+# fast build rule for target.
+color/fast:
+	$(MAKE) $(MAKESILENT) -f color/CMakeFiles/color.dir/build.make color/CMakeFiles/color.dir/build
+.PHONY : color/fast
 
 home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.obj
@@ -1159,6 +1161,30 @@ home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823.dir/build.make CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823.dir/build.make CMakeFiles/PL9823.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823.dir/build.make CMakeFiles/PL9823.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PL9823.dir/build.make CMakeFiles/PL9823.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1168,15 +1194,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ELF2UF2Build"
+	@echo "... PL9823_pl9823_pio_h"
 	@echo "... PioasmBuild"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... PL9823"
 	@echo "... bs2_default"
-	@echo "... PL9823.obj"
-	@echo "... PL9823.i"
-	@echo "... PL9823.s"
+	@echo "... color"
 	@echo "... home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1293,6 +1318,9 @@ help:
 	@echo "... home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... main.obj"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

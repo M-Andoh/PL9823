@@ -69,19 +69,19 @@ include CMakeFiles/PL9823.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PL9823.dir/flags.make
 
-CMakeFiles/PL9823.dir/PL9823.cpp.obj: CMakeFiles/PL9823.dir/flags.make
-CMakeFiles/PL9823.dir/PL9823.cpp.obj: /home/mitsuru/pico/workspace/PL9823/PL9823.cpp
-CMakeFiles/PL9823.dir/PL9823.cpp.obj: CMakeFiles/PL9823.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitsuru/pico/workspace/PL9823/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PL9823.dir/PL9823.cpp.obj"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PL9823.dir/PL9823.cpp.obj -MF CMakeFiles/PL9823.dir/PL9823.cpp.obj.d -o CMakeFiles/PL9823.dir/PL9823.cpp.obj -c /home/mitsuru/pico/workspace/PL9823/PL9823.cpp
+CMakeFiles/PL9823.dir/main.cpp.obj: CMakeFiles/PL9823.dir/flags.make
+CMakeFiles/PL9823.dir/main.cpp.obj: /home/mitsuru/pico/workspace/PL9823/main.cpp
+CMakeFiles/PL9823.dir/main.cpp.obj: CMakeFiles/PL9823.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitsuru/pico/workspace/PL9823/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PL9823.dir/main.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PL9823.dir/main.cpp.obj -MF CMakeFiles/PL9823.dir/main.cpp.obj.d -o CMakeFiles/PL9823.dir/main.cpp.obj -c /home/mitsuru/pico/workspace/PL9823/main.cpp
 
-CMakeFiles/PL9823.dir/PL9823.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PL9823.dir/PL9823.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mitsuru/pico/workspace/PL9823/PL9823.cpp > CMakeFiles/PL9823.dir/PL9823.cpp.i
+CMakeFiles/PL9823.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PL9823.dir/main.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mitsuru/pico/workspace/PL9823/main.cpp > CMakeFiles/PL9823.dir/main.cpp.i
 
-CMakeFiles/PL9823.dir/PL9823.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PL9823.dir/PL9823.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mitsuru/pico/workspace/PL9823/PL9823.cpp -o CMakeFiles/PL9823.dir/PL9823.cpp.s
+CMakeFiles/PL9823.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PL9823.dir/main.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mitsuru/pico/workspace/PL9823/main.cpp -o CMakeFiles/PL9823.dir/main.cpp.s
 
 CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/PL9823.dir/flags.make
 CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -718,7 +718,7 @@ CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/hardware_pio/pio
 
 # Object files for target PL9823
 PL9823_OBJECTS = \
-"CMakeFiles/PL9823.dir/PL9823.cpp.obj" \
+"CMakeFiles/PL9823.dir/main.cpp.obj" \
 "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -769,7 +769,7 @@ PL9823_OBJECTS = \
 # External object files for target PL9823
 PL9823_EXTERNAL_OBJECTS =
 
-PL9823.elf: CMakeFiles/PL9823.dir/PL9823.cpp.obj
+PL9823.elf: CMakeFiles/PL9823.dir/main.cpp.obj
 PL9823.elf: CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 PL9823.elf: CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 PL9823.elf: CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -817,6 +817,7 @@ PL9823.elf: CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico
 PL9823.elf: CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 PL9823.elf: CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 PL9823.elf: CMakeFiles/PL9823.dir/build.make
+PL9823.elf: color/libcolor.a
 PL9823.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 PL9823.elf: CMakeFiles/PL9823.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mitsuru/pico/workspace/PL9823/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable PL9823.elf"

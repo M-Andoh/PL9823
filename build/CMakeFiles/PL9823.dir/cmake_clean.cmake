@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PL9823.dir/PL9823.cpp.obj"
-  "CMakeFiles/PL9823.dir/PL9823.cpp.obj.d"
   "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
   "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj.d"
   "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
@@ -82,6 +80,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/PL9823.dir/home/mitsuru/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
+  "CMakeFiles/PL9823.dir/main.cpp.obj"
+  "CMakeFiles/PL9823.dir/main.cpp.obj.d"
   "PL9823.elf"
   "PL9823.pdb"
 )

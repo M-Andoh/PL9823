@@ -1,6 +1,7 @@
 # Hashes of file build rules.
 2cd5b6767299dd5ef2df305063b07d17 CMakeFiles/ELF2UF2Build
 7efc3ddf74f9f107c7284816533460a3 CMakeFiles/ELF2UF2Build-complete
+2cd5b6767299dd5ef2df305063b07d17 CMakeFiles/PL9823_pl9823_pio_h
 6ac505b5d4af4dc6527fb90a457d7659 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 1fee5ff3450469e1e8fb619c775a83e0 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 4d6e4b7186fb44e804765a2872d2111f elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
@@ -23,3 +24,4 @@ a74b0daf050115b0073b0f223c0b7582 pico-sdk/src/rp2_common/pico_cyw43_driver/pioas
 f9fc8ba52e25cde9380cf4659fb4d192 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
 9c43910898ceb5d650febcdf59919e46 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
 dd4817176f68235791e684797d8481b0 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update
+85c3c445e60090f168f937db6e303c7b pl9823.pio.h
